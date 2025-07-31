@@ -9,7 +9,7 @@ contract DeploySimpleStorage is Script {
     //     address simpleStorage = address(new SimpleStorage());
     //     return simpleStorage;
     // }
-    function run() external returns (SimpleStorage){
+    function run() external returns (SimpleStorage) {
         vm.startBroadcast();
         SimpleStorage simpleStorage = new SimpleStorage();
         vm.stopBroadcast();
